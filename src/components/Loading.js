@@ -10,8 +10,6 @@ export default class loading extends Component {
       <img src={cheetah} style={{width:'45%',height:'40%'}} alt=""></img>
       <img src={Loadingtext} className="my-2" alt="."></img>
       </div>
-       
-        
     )
   }
 }

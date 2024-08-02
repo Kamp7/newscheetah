@@ -5,7 +5,7 @@ export class NewsItem extends Component {
     let {title,description,imageUrl,newsUrl}=this.props;
     return (
       <>
-        <div className="card my-2">
+        <div className="card border-dark my-2">
         <img src={imageUrl?imageUrl:"https://cdn.dribbble.com/userupload/14122506/file/original-5e35aa8d26b22b288352fc43116d1862.jpg?crop=0x0-1600x1200&resize=400x300&vertical=center"} className="card-img-top" alt="..."/>
         <div className="card-body" style={{backgroundColor:'#1F0985',color:'white'}}>
             <h5 className="card-title">{title}</h5>
@@ -18,4 +18,4 @@ export class NewsItem extends Component {
   }
 }
 
-export default NewsItem
+export default NewsItem;

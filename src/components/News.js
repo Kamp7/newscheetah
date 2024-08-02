@@ -27,7 +27,7 @@ export class News extends Component {
     this.componentDidMount();
   };
   async componentDidMount() {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&page=${this.state.pagenum}&pageSize=${this.props.pageSize}&apiKey=e59ca01739a24f32a78523e058424491`;
+    let url =`https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&page=${this.state.pagenum}&pageSize=${this.props.pageSize}&apiKey=e59ca01739a24f32a78523e058424491`;
     let data = await fetch(url);
     let parsedata = await data.json();
     this.setState({ loading: false });
@@ -54,7 +54,7 @@ export class News extends Component {
                 );
               })}
               <div className="d-flex justify-content-around">
-                <button disabled={this.state.pagenum <= 1} type="button" className="btn btn-info my-4"onClick={this.handlePrev}>
+                <button disabled={this.state.pagenum <= 1} type="button" className="btn btn-info my-4" onClick={this.handlePrev}>
                   Previous &larr;
                 </button>
                 <button disabled={(this.state.pagenum) >= Math.ceil(this.state.totalResults/15)} type="button"className="btn btn-info my-4" onClick={this.handleNext}>
