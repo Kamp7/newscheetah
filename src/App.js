@@ -40,12 +40,7 @@ const router = createBrowserRouter([
     <News key="technology" pageSize={15} category='technology'/>
     </>,
   },
-  {
-    path: "/politics",
-    element: <><Navbar/>
-     <News key="politics" pageSize={15} category='politics'/>
-     </>,
-  },
+
 ]);
 
 

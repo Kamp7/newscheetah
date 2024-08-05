@@ -44,9 +44,6 @@ export class Navbar extends Component {
                   <li class="nav-item active"><Link to="/technology" className="nav-link mx-2">
                     Technology
                   </Link></li>
-                  <li class="nav-item active"><Link to="/politics" className="nav-link mx-2">
-                    Politics
-                  </Link></li>
               </ul>
             </div>
           </div>
